@@ -314,14 +314,7 @@
         link.addEventListener("click", function(event) {
             if (this.hash) {
                 event.preventDefault();
-                const target = document.querySelector(this.hash);
-                const offset = 50; // Adjust this value to match your header's height
-                const targetPosition = target.offsetTop - offset;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.hash).scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
