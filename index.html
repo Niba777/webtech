@@ -121,55 +121,105 @@
                         </div>
                     </section>
 
-                    <!-- Section 2: User Dashboard with Header -->
-                    <section id="dashboard" class="container box feature1">
-                        <!-- Header Wrapper for Section -->
-                        <div id="header-wrapper">
-                            <div class="container">
-                                <header id="header">
-                                    <div class="inner">
-                                        <h1><a href="#banner" id="logo">Investly</a></h1>
+<!-- Section 2: User Dashboard with Header -->
+<section id="dashboard" class="container box feature1">
+    <!-- Header Wrapper for Section -->
+    <div id="header-wrapper">
+        <div class="container">
+            <header id="header">
+                <div class="inner">
+                    <h1><a href="#banner" id="logo">Investly</a></h1>
 
-                                        <nav id="nav">
-                                            <ul>
-                                                <li><a href="#top">Home</a></li>
-                                                <li><a href="#dashboard">Dashboard</a></li>
-                                                <li><a href="#investment-profiles">Investment Profiles</a></li>
-                                                <li><a href="#education-hub">Education Hub</a></li>
-                                                <li><a href="logout.html">Logout</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </header>
-                            </div>
-                        </div>
-
-<header class="major">
-    <h2>Your Portfolio Overview</h2>
-    <p>Track your financial goals and portfolio performance in real time.</p>
-</header>
-<div class="row">
-    <div class="col-6 col-12-medium">
-        <section>
-            <header class="second icon solid fa-chart-line">
-                <h3>Current Balance</h3>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#dashboard">Dashboard</a></li>
+                            <li><a href="#investment-profiles">Investment Profiles</a></li>
+                            <li><a href="#education-hub">Education Hub</a></li>
+                            <li><a href="logout.html">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
-            <p>Your portfolio balance is currently <strong>$12,450</strong>.</p>
-            <button class="button small">Add Funds</button>
-        </section>
+        </div>
     </div>
-    <div class="col-6 col-12-medium">
-        <section>
-            <header class="second icon solid fa-percentage">
-                <h3>Performance</h3>
-            </header>
-            <p>Overall performance: <strong>+7.5%</strong> this month.</p>
-            <progress value="75" max="100"></progress>
-        </section>
-    </div>
-</div>
 
-                    </section>
+    <header class="major">
+        <h2>Your Portfolio Overview</h2>
+        <p>Track your financial goals and portfolio performance in real time.</p>
+    </header>
+
+    <div class="row">
+        <!-- Goals Progress Tracker -->
+        <div class="col-6 col-12-medium">
+            <section>
+                <header class="second icon solid fa-bullseye">
+                    <h3>Goals Progress Tracker</h3>
+                </header>
+                <p>Savings Goal: $10,000 / $15,000</p>
+                <progress value="67" max="100"></progress>
+            </section>
+        </div>
+
+        <!-- Recent Transactions -->
+        <div class="col-6 col-12-medium">
+            <section>
+                <header class="second icon solid fa-exchange-alt">
+                    <h3>Recent Transactions</h3>
+                </header>
+                <ul>
+                    <li>Bought 10 shares of ABC Corp - $1500</li>
+                    <li>Sold 5 shares of XYZ Inc - $500</li>
+                    <li>Dividend from DEF Corp - $120</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Portfolio Diversification -->
+        <div class="col-6 col-12-medium">
+            <section>
+                <header class="second icon solid fa-chart-pie">
+                    <h3>Portfolio Diversification</h3>
+                </header>
+                <p>Investment Allocation:</p>
+                <ul>
+                    <li>Equities: 60%</li>
+                    <li>Bonds: 20%</li>
+                    <li>Cash: 10%</li>
+                    <li>Crypto: 10%</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Alerts & Notifications -->
+        <div class="col-6 col-12-medium">
+            <section>
+                <header class="second icon solid fa-bell">
+                    <h3>Alerts & Notifications</h3>
+                </header>
+                <p>Stay updated:</p>
+                <ul>
+                    <li>Your stock XYZ is down 10%—consider reviewing your portfolio.</li>
+                    <li>Your savings goal is 80% complete—great job!</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Quick Action Buttons -->
+        <div class="col-12">
+            <section>
+                <header class="second icon solid fa-tools">
+                    <h3>Quick Actions</h3>
+                </header>
+                <div>
+                    <button class="button small">Add Funds</button>
+                    <button class="button small">Withdraw Funds</button>
+                    <button class="button small">Rebalance Portfolio</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
 
                     <!-- Section 3: Investment Profiles with Header -->
                     <section id="investment-profiles" class="container box feature1">
