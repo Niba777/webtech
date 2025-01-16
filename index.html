@@ -140,6 +140,34 @@
 
 
 
+<style>
+  .ticker-container {
+      width: 100%;
+      background: #2c3e50;
+      color: gold;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+  }
+  .ticker-text {
+      display: inline-block;
+      animation: scrollTicker 15s linear infinite;
+  }
+  @keyframes scrollTicker {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+  }
+</style>
+
+<div class="ticker-container">
+    <span class="ticker-text">📈 AAPL: $145.32 | TSLA: $785.50 | BTC: $42,500 | ETH: $2,950 | NIFTY50: 19,250 | SENSEX: 64,300</span>
+</div>
+
+        
         
         
     </style>
