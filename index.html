@@ -530,24 +530,6 @@
 </a>
 
 
-<script>
-    function createFallingText() {
-        const terms = ["Stocks", "Investments", "Wealth", "Finance", "Trading", "Growth", "Assets", "Cryptocurrency"];
-        const text = document.createElement("div");
-        text.classList.add("falling-text");
-        text.innerText = terms[Math.floor(Math.random() * terms.length)];
-
-        text.style.left = Math.random() * window.innerWidth + "px";
-        text.style.animationDuration = (Math.random() * 3 + 3) + "s"; // Vary fall speed
-        document.body.appendChild(text);
-
-        setTimeout(() => {
-            text.remove();
-        }, 5000); // Remove element after animation ends
-    }
-
-    setInterval(createFallingText, 1000); // Generate a new word every second
-</script>
 
 
     
