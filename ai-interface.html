@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Investly AI Interface</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/ai-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .form-container h2 {
+            color: #2c3e50;
+        }
+        .form-container label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Welcome to Your Personalized Investment Guide</h2>
+        <form id="ai-form">
+            <label for="age">What is your age?</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required />
+
+            <label for="risk">What is your risk level?</label>
+            <select id="risk" name="risk">
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="investment">How much are you willing to invest?</label>
+            <input type="number" id="investment" name="investment" placeholder="Enter amount (e.g., $5000)" required />
+
+            <label for="goal">What is your investment goal?</label>
+            <select id="goal" name="goal">
+                <option value="retirement">Retirement Savings</option>
+                <option value="education">Education</option>
+                <option value="wealth">Wealth Growth</option>
+            </select>
+
+            <button type="button" onclick="processAI()">Get Recommendation</button>
+        </form>
+        <div id="result" style="margin-top: 20px; color: #2c3e50;"></div>
+    </div>
+
+    <script>
+        function processAI() {
+            const age = document.getElementById("age").value;
+            const risk = document.getElementById("risk").value;
+            const investment = document.getElementById("investment").value;
+            const goal = document.getElementById("goal").value;
+
+            const resultDiv = document.getElementById("result");
+
+            // Simple AI logic for demonstration
+            let recommendation = "Based on your preferences:\n";
+            if (risk === "low") {
+                recommendation += "We suggest investing in bonds and blue-chip stocks.";
+            } else if (risk === "moderate") {
+                recommendation += "Consider a balanced portfolio of stocks and mutual funds.";
+            } else if (risk === "high") {
+                recommendation += "Explore high-growth stocks and cryptocurrency.";
+            }
+
+            recommendation += `\nYour goal (${goal}) aligns well with this strategy.`;
+
+            resultDiv.textContent = recommendation;
+        }
+    </script>
+</body>
+</html>
